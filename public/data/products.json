@@ -1,0 +1,337 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Wireless Bluetooth Headphones",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/zu8ccrqw23rqjsklfdmx.jpg",
+    "category": "Electronics",
+    "price": 49.99,
+    "description": "High-quality wireless Bluetooth headphones with noise cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Noise-cancelling",
+      "20 hours battery life",
+      "Over-ear design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "wireless-bluetooth-headphones"
+  },
+  {
+    "product_id": 2,
+    "product_title": "Smart LED TV 55\"",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643530/assignment/B8/jmvveku6y1wwq0wxud6u.jpg",
+    "category": "Electronics",
+    "price": 399.99,
+    "description": "55-inch smart LED TV with 4K Ultra HD resolution and streaming capabilities.",
+    "Specification": ["55-inch display", "4K UHD", "HDR10", "Built-in WiFi"],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "smart-led-tv-55-inch"
+  },
+  {
+    "product_id": 3,
+    "product_title": "Gaming Laptop",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/xcuuffglbamrgkdib7uq.webp",
+    "category": "Computers",
+    "price": 1099.99,
+    "description": "High-performance gaming laptop with powerful GPU and SSD storage.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "slug": "gaming-laptop"
+  },
+  {
+    "product_id": 4,
+    "product_title": "Smartphone with Triple Camera",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/uamqs1mpohvuoonnzitx.jpg",
+    "category": "Mobiles",
+    "price": 699.99,
+    "description": "Sleek smartphone with triple camera system and fast-charging support.",
+    "Specification": [
+      "6.4-inch display",
+      "128GB storage",
+      "Triple camera setup",
+      "Fast charging"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "smartphone-with-triple-camera"
+  },
+  {
+    "product_id": 5,
+    "product_title": "Smart Watch",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/kgpywnwgh56nwat40xpg.jpg",
+    "category": "Wearables",
+    "price": 199.99,
+    "description": "Water-resistant smartwatch with heart-rate monitoring and GPS.",
+    "Specification": [
+      "Heart rate monitoring",
+      "GPS",
+      "Water-resistant",
+      "5-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "slug": "smart-watch"
+  },
+  {
+    "product_id": 6,
+    "product_title": "Portable Charger 10000mAh",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
+    "category": "Accessories",
+    "price": 29.99,
+    "description": "Compact 10000mAh portable charger for fast, on-the-go charging.",
+    "Specification": [
+      "10000mAh capacity",
+      "Dual USB output",
+      "Fast charging",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "portable-charger-10000mah"
+  },
+  {
+    "product_id": 7,
+    "product_title": "Wireless Keyboard and Mouse",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/d7fzz3xy0bdveq84pr2h.jpg",
+    "category": "Computers",
+    "price": 39.99,
+    "description": "Wireless keyboard and mouse combo with long battery life.",
+    "Specification": [
+      "Wireless 2.4 GHz",
+      "Silent keys",
+      "Optical mouse",
+      "Long battery life"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "slug": "wireless-keyboard-mouse"
+  },
+  {
+    "product_id": 8,
+    "product_title": "Air Purifier",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/yi6fcgjny4uxbv1euwpa.jpg",
+    "category": "Home Appliances",
+    "price": 129.99,
+    "description": "HEPA filter air purifier for cleaner, fresher indoor air.",
+    "Specification": [
+      "HEPA filter",
+      "Quiet operation",
+      "Covers up to 300 sq ft",
+      "Energy efficient"
+    ],
+    "availability": false,
+    "rating": 4.4,
+    "slug": "air-purifier"
+  },
+  {
+    "product_id": 9,
+    "product_title": "Instant Pot Multi-Cooker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/rcr0h7nuatalq51nk7w0.webp",
+    "category": "Kitchen Appliances",
+    "price": 89.99,
+    "description": "7-in-1 multi-cooker with various cooking functions.",
+    "Specification": [
+      "7 cooking functions",
+      "Stainless steel",
+      "6-quart capacity",
+      "Easy to clean"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "instant-pot-multi-cooker"
+  },
+  {
+    "product_id": 10,
+    "product_title": "Yoga Mat",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
+    "category": "Fitness",
+    "price": 24.99,
+    "description": "Durable and non-slip yoga mat for all levels of practice.",
+    "Specification": [
+      "Non-slip",
+      "6mm thick",
+      "Eco-friendly",
+      "72-inch length"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "yoga-mat"
+  },
+  {
+    "product_id": 11,
+    "product_title": "Electric Kettle",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/u1qcktpv9pldcrk8xwdm.jpg",
+    "category": "Kitchen Appliances",
+    "price": 29.99,
+    "description": "1.7L electric kettle with rapid-boil technology.",
+    "Specification": [
+      "1.7-liter capacity",
+      "Stainless steel",
+      "Auto shut-off",
+      "Rapid boil"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "slug": "electric-kettle"
+  },
+  {
+    "product_id": 12,
+    "product_title": "Digital Camera",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/rpjhfhejpobdesofvntj.webp",
+    "category": "Photography",
+    "price": 299.99,
+    "description": "Compact digital camera with 20MP sensor and 4x optical zoom.",
+    "Specification": [
+      "20MP sensor",
+      "4x optical zoom",
+      "1080p video",
+      "3-inch LCD"
+    ],
+    "availability": false,
+    "rating": 4.2,
+    "slug": "digital-camera"
+  },
+  {
+    "product_id": 13,
+    "product_title": "Electric Toothbrush",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/iq99rqfboornzbp5ydrw.jpg",
+    "category": "Health",
+    "price": 49.99,
+    "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+    "Specification": [
+      "Rechargeable",
+      "Multiple brushing modes",
+      "2-minute timer",
+      "Waterproof"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "electric-toothbrush"
+  },
+  {
+    "product_id": 14,
+    "product_title": "Laptop Backpack",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/zxh21xrmlfflt5sfm799.jpg",
+    "category": "Accessories",
+    "price": 39.99,
+    "description": "Water-resistant laptop backpack with multiple compartments.",
+    "Specification": [
+      "Fits up to 15-inch laptops",
+      "Water-resistant",
+      "Padded shoulder straps",
+      "Multiple compartments"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "laptop-backpack"
+  },
+  {
+    "product_id": 15,
+    "product_title": "Cordless Vacuum Cleaner",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/hczjvzkcozq2ggkojkgw.jpg",
+    "category": "Home Appliances",
+    "price": 99.99,
+    "description": "Lightweight cordless vacuum cleaner for easy cleaning.",
+    "Specification": [
+      "Cordless",
+      "Lightweight",
+      "HEPA filter",
+      "Rechargeable battery"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "cordless-vacuum-cleaner"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Smart Thermostat",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/ea3ysjegop4mouimnbw0.png",
+    "category": "Home Automation",
+    "price": 149.99,
+    "description": "WiFi-enabled smart thermostat for energy-efficient home heating and cooling.",
+    "Specification": [
+      "WiFi-enabled",
+      "Energy-saving",
+      "App control",
+      "Voice assistant compatible"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "smart-thermostat"
+  },
+  {
+    "product_id": 17,
+    "product_title": "Bluetooth Speaker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/f9geehmziei1iljcrodb.avif",
+    "category": "Audio",
+    "price": 29.99,
+    "description": "Portable Bluetooth speaker with powerful bass and 10-hour battery life.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "10-hour battery life",
+      "Water-resistant",
+      "Built-in microphone"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "bluetooth-speaker"
+  },
+  {
+    "product_id": 18,
+    "product_title": "Espresso Machine",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/eysnube1xxlcjtiukuga.jpg",
+    "category": "Kitchen Appliances",
+    "price": 159.99,
+    "description": "Automatic espresso machine for café-quality coffee at home.",
+    "Specification": [
+      "15-bar pump",
+      "Milk frother",
+      "Removable water tank",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "slug": "espresso-machine"
+  },
+  {
+    "product_id": 19,
+    "product_title": "Fitness Tracker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/vk7alkmg3maunchgfg3m.png",
+    "category": "Wearables",
+    "price": 59.99,
+    "description": "Activity tracker with heart rate monitoring and step counter.",
+    "Specification": [
+      "Heart rate monitor",
+      "Step counter",
+      "Sleep tracking",
+      "Water-resistant"
+    ],
+    "availability": false,
+    "rating": 4.1,
+    "slug": "fitness-tracker"
+  },
+  {
+    "product_id": 20,
+    "product_title": "Robot Vacuum Cleaner",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/l8f4fanlgo7uv1mzisqp.jpg",
+    "category": "Home Appliances",
+    "price": 229.99,
+    "description": "Robot vacuum cleaner with intelligent navigation and app control.",
+    "Specification": [
+      "App control",
+      "Self-charging",
+      "Anti-fall sensors",
+      "Works on various surfaces"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "robot-vacuum-cleaner"
+  }
+]

@@ -1,8 +1,25 @@
-# React + Vite
+# Title: GadgetHeaven E-Commerce a gadget-buying website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
 
-Currently, two official plugins are available:
+GadgetHeaven is a gadget-buying website that allows users to browse and purchase gadgets. The website has a clean and modern design, with a focus on user experience. It also has a secure payment gateway to ensure that users' payment information is protected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features:
+
+- User can see a list of all the gadgets available for purchase
+- User can search for specific gadgets by name or category
+- User can view detailed information about a specific gadget
+- User can add a gadget to their cart
+- User can view their cart and see the total cost of their purchase
+- User can add wishlist to their wishlist
+- User can view their wishlist and see the total cost of their purchase
+- User can checkout and complete the purchase
+
+## Live Demo:
+
+https://batch10-assignment-8.netlify.app
+
+## Screenshots:
+
+<!--
+![Screenshot 1](https://github.com/mdrana/batch-10-assignment-8/blob/main/screenshots/screenshot-1.png) -->
