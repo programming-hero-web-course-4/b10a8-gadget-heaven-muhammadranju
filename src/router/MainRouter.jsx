@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainRoot from "../layout/Root/MainRoot";
 import Home from "../pages/Home/Home";
+import Category from "../layout/Categories/Category";
 
 const MainRouter = createBrowserRouter([
   {
@@ -11,6 +12,13 @@ const MainRouter = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("../data/categories.json"),
+        children: [
+          {
+            path: "/category/:categoryId",
+            element: <Category />,
+          },
+        ],
       },
       {
         path: "/statistics",
@@ -37,6 +45,10 @@ const MainRouter = createBrowserRouter([
         path: "/wishlist",
         element: <div>Wishlist</div>,
       },
+      // {
+      //   path: "/category/:categoryId",
+      //   element: <Category />,
+      // },
     ],
   },
 ]);
