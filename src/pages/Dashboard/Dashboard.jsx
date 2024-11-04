@@ -110,7 +110,7 @@ const Dashboard = () => {
             <button
               onClick={handelPurchaseBtn}
               disabled={totalPrice === 0 ? true : false}
-              className={`btn border rounded-full bg-purple-600 text-white px-14 ${
+              className={`btn border rounded-full  bg-purple-600 text-white px-14 ${
                 totalPrice === 0 ? "disabled" : ""
               }`}
             >

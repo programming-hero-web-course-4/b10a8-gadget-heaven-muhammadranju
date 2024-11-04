@@ -6,6 +6,7 @@ const Statistics = () => {
   useEffect(() => {
     document.title = "Statistics | GadgetHeaven ";
   }, []);
+
   return (
     <>
       <div>
