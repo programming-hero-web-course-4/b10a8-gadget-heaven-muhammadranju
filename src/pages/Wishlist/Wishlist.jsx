@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
 
 const Wishlist = () => {
+  useEffect(() => {
+    document.title = "Wishlist | GadgetHeaven ";
+  }, []);
   return (
     <div>
       <Header />

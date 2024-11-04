@@ -1,4 +1,3 @@
-/* eslint-disable no-dupe-keys */
 import { createBrowserRouter } from "react-router-dom";
 import MainRoot from "../layout/Root/MainRoot";
 import Home from "../pages/Home/Home";
@@ -7,14 +6,14 @@ import Product from "../pages/Product/Product";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Wishlist from "../pages/Wishlist/Wishlist";
 import Statistics from "../pages/Statistics/Statistics";
-import Cart from "../components/Carts/Carts";
 import CartPage from "../pages/Cart/CartPage";
+import ErrorPage from "../layout/Error/ErrorPage";
 
 const MainRouter = createBrowserRouter([
   {
     path: "/",
     element: <MainRoot />,
-    errorElement: <div>Error</div>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

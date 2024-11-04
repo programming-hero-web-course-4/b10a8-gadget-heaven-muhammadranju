@@ -1,4 +1,5 @@
-import { useContext } from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import Header from "../../layout/Header/Header";
@@ -10,7 +11,12 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Product = () => {
   const useProducts = useContext(ProductContext);
+
   const { productId } = useParams();
+
+  if (!useProducts || useProducts.length === 0) {
+    return;
+  }
   const findProduct = useProducts.find((item) => item.slug === productId);
 
   const {
@@ -25,6 +31,9 @@ const Product = () => {
   } = findProduct;
   console.log(findProduct);
 
+  useEffect(() => {
+    document.title = `${product_title} | GadgetHeaven`;
+  }, []);
   return (
     <div className="relative h-screen">
       <Header />

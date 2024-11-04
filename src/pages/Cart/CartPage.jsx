@@ -1,9 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import Carts from "../../components/Carts/Carts";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
 
 const CartPage = () => {
+  useEffect(() => {
+    document.title = "Cart | GadgetHeaven";
+  }, []);
   return (
     <div>
       <Header />

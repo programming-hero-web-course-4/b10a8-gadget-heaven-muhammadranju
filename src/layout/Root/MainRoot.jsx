@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-// import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { createContext, useEffect, useState } from "react";
 

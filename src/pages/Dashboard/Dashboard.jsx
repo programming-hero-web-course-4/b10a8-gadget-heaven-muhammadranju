@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Carts from "../../components/Carts/Carts";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
@@ -14,6 +14,9 @@ const Dashboard = () => {
   const handelWishlistBtn = () => {
     setIsCart(false);
   };
+  useEffect(() => {
+    document.title = "Dashboard | GadgetHeaven ";
+  }, []);
 
   return (
     <div>

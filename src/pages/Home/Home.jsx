@@ -13,7 +13,7 @@ const Home = () => {
   const { categoryId } = useParams();
 
   const handelIsActive = () => {
-    setIsActiveColor(false);
+    setIsActiveColor(!isActiveColor);
   };
   useEffect(() => {
     if (categoryId === "all-products" || !categoryId) {
@@ -25,8 +25,9 @@ const Home = () => {
       setCatProducts(findProducts);
     }
   }, [categoryId, useProducts]);
-
-  // console.log(catProducts);
+  useEffect(() => {
+    document.title = "GadgetHeaven E-Commerce a gadget-buying website";
+  }, []);
   return (
     <>
       <Navbar />
@@ -58,10 +59,19 @@ const Home = () => {
               />
             ))}
           </div>
+
           <div className="w-[80%] grid lg:grid-cols-3 grid-cols-1 gap-4 h-full">
-            {catProducts.map((card) => (
-              <Card key={card.product_id} card={card} />
-            ))}
+            {catProducts.length !== 0 ? (
+              <>
+                {catProducts.map((card) => (
+                  <Card key={card.product_id} card={card} />
+                ))}
+              </>
+            ) : (
+              <h1 className="font-bold text-4xl text-purple-600">
+                Not Data Found
+              </h1>
+            )}
           </div>
         </div>
       </div>
