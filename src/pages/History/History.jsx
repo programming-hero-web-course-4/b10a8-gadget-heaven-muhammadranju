@@ -3,7 +3,6 @@ import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import Carts from "../../components/Carts/Carts";
-import { HiAdjustmentsVertical } from "react-icons/hi2";
 
 const History = () => {
   const { historyArray } = useContext(ProductContext);
