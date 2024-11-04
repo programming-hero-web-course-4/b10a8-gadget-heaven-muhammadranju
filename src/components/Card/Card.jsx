@@ -15,7 +15,7 @@ const Card = ({ card }) => {
       </figure>
       <div className="card-body ">
         <h2 className="card-title">{card?.product_title}</h2>
-        <p>{card?.description}</p>
+        <p className="font-semibold text-lg">Price: ${card?.price}</p>
         <div className="card-actions">
           <Link
             to={`/product/${card?.slug}`}
