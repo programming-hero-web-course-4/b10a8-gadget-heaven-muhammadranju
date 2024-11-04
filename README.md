@@ -15,11 +15,25 @@ GadgetHeaven is a gadget-buying website that allows users to browse and purchase
 - User can view their wishlist and see the total cost of their purchase
 - User can checkout and complete the purchase
 
+## Technologies Used:
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Tailwind CSS
+- Context API
+- Fetch API
+- Toastify React
+
 ## Live Demo:
 
-https://batch10-assignment-8.netlify.app
+### https://batch10-assignment-8.netlify.app
+
+### https://batch10-assignment-8.surge.sh
 
 ## Screenshots:
 
-<!--
-![Screenshot 1](https://github.com/mdrana/batch-10-assignment-8/blob/main/screenshots/screenshot-1.png) -->
+![Screenshot 1](./public/assets/Screenshot-1.jpeg)
+![Screenshot 1](./public/assets/Screenshot.jpeg)
+![Screenshot 1](./public/assets/Screenshot-2.jpeg)
