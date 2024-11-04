@@ -5,11 +5,19 @@ import Header from "../../layout/Header/Header";
 import { HiAdjustmentsVertical } from "react-icons/hi2";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
 import { ProductContext } from "../../layout/Root/MainRoot";
-
+import { toast } from "react-toastify";
+const msgInfo = {
+  position: "top-center",
+  autoClose: 2000,
+  hideProgressBar: true,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+};
 const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
   const [sortPrice, setSortPrice] = useState([]);
-  const { cartArray, wishlistArray, handelAddToCart } =
+  const { cartArray, wishlistArray, handelAddToCart, setCartArray } =
     useContext(ProductContext);
 
   const handelCartBtn = () => {
@@ -26,6 +34,15 @@ const Dashboard = () => {
   };
   // console.log(sortPrice);
 
+  const totalPrice = cartArray.reduce((accumulator, product) => {
+    return accumulator + product.price;
+  }, 0);
+  const handelPurchaseBtn = () => {
+    console.log("object");
+    setCartArray([]);
+    toast.info("Successfully Purchase your items ", msgInfo);
+    document.getElementById("purchaseModel").showModal();
+  };
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven ";
   }, []);
@@ -63,14 +80,17 @@ const Dashboard = () => {
         <h3 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h3>
         {isCart && (
           <div className="space-x-3">
-            <span className="font-bold text-xl">Total cost:$ 999.99</span>
+            <span className="font-bold text-xl">Total cost: ${totalPrice}</span>
             <button
               onClick={handelSortByPrice}
               className="btn rounded-full border-purple-500 text-purple-500 px-10"
             >
               Sort by Price <HiAdjustmentsVertical className="text-2xl" />
             </button>
-            <button className="btn border rounded-full bg-purple-600 text-white px-14">
+            <button
+              onClick={handelPurchaseBtn}
+              className="btn border rounded-full bg-purple-600 text-white px-14"
+            >
               Purchase
             </button>
           </div>
@@ -86,6 +106,21 @@ const Dashboard = () => {
               handelAddToCart={handelAddToCart}
             />
           ))}
+
+      <dialog id="purchaseModel" className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">Hello!</h3>
+          <p className="py-4">
+            Press ESC key or click the button below to close
+          </p>
+          <div className="modal-action ">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
