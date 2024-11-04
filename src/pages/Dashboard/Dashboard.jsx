@@ -6,6 +6,7 @@ import { HiAdjustmentsVertical } from "react-icons/hi2";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import { toast } from "react-toastify";
+
 const msgInfo = {
   position: "top-center",
   autoClose: 2000,
@@ -14,9 +15,11 @@ const msgInfo = {
   pauseOnHover: true,
   draggable: true,
 };
+
 const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
   const [sortPrice, setSortPrice] = useState([]);
+  const [totalPurchasePrice, setTotalPurchasePrice] = useState(0);
   const { cartArray, wishlistArray, handelAddToCart, setCartArray } =
     useContext(ProductContext);
 
@@ -31,17 +34,22 @@ const Dashboard = () => {
     const sortByPriceArray = cartArray.sort((a, b) => b.price - a.price);
 
     setSortPrice(sortByPriceArray);
+    // setCartArray(sortByPriceArray);
+    sortPrice;
   };
   // console.log(sortPrice);
 
   const totalPrice = cartArray.reduce((accumulator, product) => {
-    return accumulator + product.price;
+    return parseInt(accumulator + product.price);
   }, 0);
+
   const handelPurchaseBtn = () => {
     console.log("object");
     setCartArray([]);
     toast.info("Successfully Purchase your items ", msgInfo);
     document.getElementById("purchaseModel").showModal();
+
+    setTotalPurchasePrice((prev) => prev + totalPrice);
   };
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven ";
@@ -80,7 +88,10 @@ const Dashboard = () => {
         <h3 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h3>
         {isCart && (
           <div className="space-x-3">
-            <span className="font-bold text-xl">Total cost: ${totalPrice}</span>
+            <span className="font-bold text-xl">
+              Total cost: ${totalPrice}
+              {totalPrice !== 0 && ".00"}
+            </span>
             <button
               onClick={handelSortByPrice}
               className="btn rounded-full border-purple-500 text-purple-500 px-10"
@@ -107,18 +118,30 @@ const Dashboard = () => {
             />
           ))}
 
-      <dialog id="purchaseModel" className="modal modal-bottom sm:modal-middle">
+      <dialog
+        id="purchaseModel"
+        className="modal modal-middle sm:modal-middle flex justify-center items-center text-center lg:px-0 px-3"
+      >
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
-          <div className="modal-action ">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </form>
+          <div className="flex justify-center items-center mt-4 mb-4">
+            <img src="./assets/Group.png" className="w-20" alt="" />
           </div>
+          <h3 className="text-4xl font-bold text-gray-800">
+            Payment Successfully
+          </h3>
+
+          <p className="py-4 font-semibold text-xl" id="errorId"></p>
+          <h4 className="font-bold text-lg text-gray-800">
+            Thanks for purchasing.
+          </h4>
+          <span className="font-bold ">
+            Total cost: ${totalPurchasePrice}.00
+          </span>
+          <form method="dialog" className="mt-5">
+            <button className="btn  rounded-full font-bold w-full">
+              Close
+            </button>
+          </form>
         </div>
       </dialog>
     </div>

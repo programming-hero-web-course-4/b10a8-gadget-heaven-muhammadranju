@@ -59,7 +59,7 @@ const Product = () => {
 
         <div className="flex flex-col mt-10 space-y-3">
           <h1 className="text-2xl font-bold">{product_title}</h1>
-          <span className="font-semibold text-lg">Price: ${price}</span>
+          <span className="font-semibold text-lg">Price: ${price}.00</span>
           <div>
             <span
               className={`rounded-full text-sm  p-1 px-4 ${

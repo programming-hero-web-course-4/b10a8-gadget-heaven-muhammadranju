@@ -37,7 +37,9 @@ const Cart = ({ cart }) => {
         <div className="space-y-5">
           <h1 className="font-bold text-2xl">{cart?.product_title}</h1>
           <p>{cart?.description}</p>
-          <span className="font-bold text-lg mt-5">Price: ${cart?.price}</span>
+          <span className="font-bold text-lg mt-5">
+            Price: ${cart?.price}.00
+          </span>
         </div>
       </div>
 

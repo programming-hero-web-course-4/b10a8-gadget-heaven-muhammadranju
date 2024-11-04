@@ -16,7 +16,7 @@ const WishlistCompo = ({ wishlist }) => {
           <h1 className="font-bold text-2xl">{wishlist?.product_title}</h1>
           <p>{wishlist?.description}</p>
           <span className="font-bold text-lg mt-5">
-            Price: ${wishlist?.price}
+            Price: ${wishlist?.price}.00
           </span>
           <button className="btn w-fit rounded-full text-white bg-purple-600 px-7">
             Add To Cart
