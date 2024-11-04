@@ -4,7 +4,7 @@
     "product_title": "Wireless Bluetooth Headphones",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/zu8ccrqw23rqjsklfdmx.jpg",
     "category": "Electronics",
-    "price": 49.99,
+    "price": 149.36,
     "description": "High-quality wireless Bluetooth headphones with noise cancellation.",
     "Specification": [
       "Bluetooth 5.0",
@@ -21,7 +21,7 @@
     "product_title": "Smart LED TV 55\"",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643530/assignment/B8/jmvveku6y1wwq0wxud6u.jpg",
     "category": "Electronics",
-    "price": 399.99,
+    "price": 399.0,
     "description": "55-inch smart LED TV with 4K Ultra HD resolution and streaming capabilities.",
     "Specification": ["55-inch display", "4K UHD", "HDR10", "Built-in WiFi"],
     "availability": true,
@@ -33,7 +33,7 @@
     "product_title": "Gaming Laptop",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/xcuuffglbamrgkdib7uq.webp",
     "category": "Computers",
-    "price": 1099.99,
+    "price": 1099.0,
     "description": "High-performance gaming laptop with powerful GPU and SSD storage.",
     "Specification": [
       "Intel Core i7",
@@ -84,7 +84,7 @@
     "product_title": "Portable Charger 10000mAh",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
     "category": "Accessories",
-    "price": 29.99,
+    "price": 89.65,
     "description": "Compact 10000mAh portable charger for fast, on-the-go charging.",
     "Specification": [
       "10000mAh capacity",
@@ -101,7 +101,7 @@
     "product_title": "Wireless Keyboard and Mouse",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/d7fzz3xy0bdveq84pr2h.jpg",
     "category": "Computers",
-    "price": 39.99,
+    "price": 159.99,
     "description": "Wireless keyboard and mouse combo with long battery life.",
     "Specification": [
       "Wireless 2.4 GHz",
@@ -135,7 +135,7 @@
     "product_title": "Instant Pot Multi-Cooker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/rcr0h7nuatalq51nk7w0.webp",
     "category": "Kitchen Appliances",
-    "price": 89.99,
+    "price": 89.37,
     "description": "7-in-1 multi-cooker with various cooking functions.",
     "Specification": [
       "7 cooking functions",
@@ -152,7 +152,7 @@
     "product_title": "Yoga Mat",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
     "category": "Accessories",
-    "price": 24.99,
+    "price": 94.49,
     "description": "Durable and non-slip yoga mat for all levels of practice.",
     "Specification": [
       "Non-slip",
@@ -169,7 +169,7 @@
     "product_title": "Electric Kettle",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/u1qcktpv9pldcrk8xwdm.jpg",
     "category": "Kitchen Appliances",
-    "price": 29.99,
+    "price": 79.69,
     "description": "1.7L electric kettle with rapid-boil technology.",
     "Specification": [
       "1.7-liter capacity",
@@ -203,7 +203,7 @@
     "product_title": "Electric Toothbrush",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/iq99rqfboornzbp5ydrw.jpg",
     "category": "Wearables",
-    "price": 49.99,
+    "price": 83.0,
     "description": "Rechargeable electric toothbrush with multiple brushing modes.",
     "Specification": [
       "Rechargeable",
@@ -220,7 +220,7 @@
     "product_title": "Laptop Backpack",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/zxh21xrmlfflt5sfm799.jpg",
     "category": "Accessories",
-    "price": 39.99,
+    "price": 95.49,
     "description": "Water-resistant laptop backpack with multiple compartments.",
     "Specification": [
       "Fits up to 15-inch laptops",
@@ -237,7 +237,7 @@
     "product_title": "Cordless Vacuum Cleaner",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/hczjvzkcozq2ggkojkgw.jpg",
     "category": "Home Appliances",
-    "price": 99.99,
+    "price": 99.0,
     "description": "Lightweight cordless vacuum cleaner for easy cleaning.",
     "Specification": [
       "Cordless",
@@ -254,7 +254,7 @@
     "product_title": "Smart Thermostat",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/ea3ysjegop4mouimnbw0.png",
     "category": "Electronics",
-    "price": 149.99,
+    "price": 149.39,
     "description": "WiFi-enabled smart thermostat for energy-efficient home heating and cooling.",
     "Specification": [
       "WiFi-enabled",
@@ -271,7 +271,7 @@
     "product_title": "Bluetooth Speaker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/f9geehmziei1iljcrodb.avif",
     "category": "Audio",
-    "price": 29.99,
+    "price": 87.89,
     "description": "Portable Bluetooth speaker with powerful bass and 10-hour battery life.",
     "Specification": [
       "Bluetooth 5.0",
@@ -288,7 +288,7 @@
     "product_title": "Espresso Machine",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/eysnube1xxlcjtiukuga.jpg",
     "category": "Kitchen Appliances",
-    "price": 159.99,
+    "price": 159.19,
     "description": "Automatic espresso machine for café-quality coffee at home.",
     "Specification": [
       "15-bar pump",
@@ -305,7 +305,7 @@
     "product_title": "Fitness Tracker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/vk7alkmg3maunchgfg3m.png",
     "category": "Wearables",
-    "price": 59.99,
+    "price": 94.29,
     "description": "Activity tracker with heart rate monitoring and step counter.",
     "Specification": [
       "Heart rate monitor",
@@ -322,7 +322,7 @@
     "product_title": "Robot Vacuum Cleaner",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/l8f4fanlgo7uv1mzisqp.jpg",
     "category": "Home Appliances",
-    "price": 229.99,
+    "price": 229.9,
     "description": "Robot vacuum cleaner with intelligent navigation and app control.",
     "Specification": [
       "App control",
@@ -339,7 +339,7 @@
     "product_title": "Noise-Cancelling Earbuds",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S8cc6c95749194087b4c10958a695027e0.jpg_720x720q80.jpg_.webp",
     "category": "Electronics",
-    "price": 79.99,
+    "price": 79.83,
     "description": "Compact noise-cancelling earbuds with high-fidelity sound and long battery life.",
     "Specification": [
       "Bluetooth 5.1",
@@ -357,7 +357,7 @@
     "product_title": "Wireless Gaming Mouse",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/6ab04ddc347e770098c9ec0a081d244e.jpg_720x720q80.jpg_.webp",
     "category": "Computers",
-    "price": 59.99,
+    "price": 69.28,
     "description": "Ergonomic wireless gaming mouse with customizable DPI settings.",
     "Specification": [
       "Wireless 2.4 GHz",
@@ -374,7 +374,7 @@
     "product_title": "Mechanical Keyboard",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/d2af0f25f903c3901b9f3f25cc92c0fa.jpg_720x720q80.jpg",
     "category": "Computers",
-    "price": 89.99,
+    "price": 89.25,
     "description": "RGB backlit mechanical keyboard designed for gaming and typing.",
     "Specification": [
       "Mechanical keys",
@@ -391,7 +391,7 @@
     "product_title": "Tablet with Stylus",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S1b0138b7e6a143c0bea59ed71c18401f3.png_720x720q80.png",
     "category": "Electronics",
-    "price": 299.99,
+    "price": 299.74,
     "description": "10-inch tablet with stylus support, ideal for sketching and note-taking.",
     "Specification": [
       "10-inch display",
@@ -408,7 +408,7 @@
     "product_title": "Gaming Headset",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/35277bf8d3eb108b063228660438c178.png_720x720q80.png",
     "category": "Computers",
-    "price": 45.99,
+    "price": 85.63,
     "description": "Over-ear gaming headset with immersive sound and noise-cancelling mic.",
     "Specification": [
       "50mm drivers",
@@ -425,7 +425,7 @@
     "product_title": "USB-C Hub",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S36a707d245fc4b45a28e1b5a300d7c399.jpg_720x720q80.jpg",
     "category": "Computers",
-    "price": 34.99,
+    "price": 94.15,
     "description": "Compact USB-C hub with multiple ports for versatile connectivity.",
     "Specification": [
       "HDMI output",
@@ -442,7 +442,7 @@
     "product_title": "5G Smartphone",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/55902caffd4c915dc7814a1687ce88b3.jpg720x720q80.jpg",
     "category": "Mobiles",
-    "price": 499.99,
+    "price": 499.79,
     "description": "High-performance smartphone with 5G connectivity and advanced camera.",
     "Specification": [
       "6.5-inch display",
@@ -460,7 +460,7 @@
     "product_title": "Wireless Charger",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/f517f5c7a1aa5017402c29d2ebe0fde5.jpg_720x720q80.jpg",
     "category": "Electronics",
-    "price": 24.99,
+    "price": 84.49,
     "description": "Fast wireless charger compatible with most smartphones.",
     "Specification": [
       "Qi-compatible",
@@ -478,7 +478,7 @@
     "product_title": "Smartphone Car Mount",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S5206c856d1184ba1bc800218211ae7fau.png_720x720q80.png",
     "category": "Mobiles",
-    "price": 14.99,
+    "price": 68.59,
     "description": "Secure car mount for smartphones, compatible with most models.",
     "Specification": [
       "360-degree rotation",
@@ -496,7 +496,7 @@
     "product_title": "Foldable Smartphone",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S40e45e41530b448fbc4eea1c32633398C.jpg_720x720q80.jpg",
     "category": "Mobiles",
-    "price": 1399.99,
+    "price": 1399.94,
     "description": "Innovative foldable smartphone with dual displays for multitasking and immersive viewing.",
     "Specification": [
       "8-inch foldable display",
@@ -530,7 +530,7 @@
     "product_title": "Budget Smartphone",
     "product_image": "https://img.drz.lazcdn.com/g/kf/Sf1a73601520942d6a92dfb7db1fe28e8l.jpg_720x720q80.jpg",
     "category": "Mobiles",
-    "price": 149.99,
+    "price": 149.9,
     "description": "Affordable smartphone with essential features for everyday use.",
     "Specification": [
       "6.1-inch display",

@@ -1,9 +1,11 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Carts from "../../components/Carts/Carts";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
+import { ProductContext } from "../../layout/Root/MainRoot";
 
 const CartPage = () => {
+  const { cartArray } = useContext(ProductContext);
   useEffect(() => {
     document.title = "Cart | GadgetHeaven";
   }, []);
@@ -23,7 +25,9 @@ const CartPage = () => {
       <div className="flex justify-between items-center mt-10 ">
         <h3 className="font-bold text-2xl">Your Carts Here</h3>
       </div>
-      <Carts />
+      {cartArray.map((cart) => (
+        <Carts cart={cart} key={cart.product_id} />
+      ))}
     </div>
   );
 };

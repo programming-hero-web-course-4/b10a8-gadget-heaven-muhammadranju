@@ -3,6 +3,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
 import Banner from "./Banner";
+import { useContext } from "react";
+import { ProductContext } from "../Root/MainRoot";
 
 const menuItems = [
   { name: "Home", url: "/" },
@@ -12,6 +14,7 @@ const menuItems = [
 ];
 
 const Navbar = () => {
+  const { cartArray, wishlistArray } = useContext(ProductContext);
   return (
     <div className="border border-purple-600 rounded-2xl  p-1">
       <div className="bg-purple-600 rounded-2xl pt-5 pb-72 relative">
@@ -83,11 +86,17 @@ const Navbar = () => {
               className="btn bg-white border rounded-full text-lg"
             >
               <IoCartOutline />
+              <div className="badge bg-purple-600 text-white badge-sm absolute -mt-10 -mr-6 py-3 text-sm">
+                {cartArray.length}
+              </div>
             </NavLink>
             <NavLink
               to={"/wishlist"}
               className="btn rounded-full bg-white border text-lg"
             >
+              <div className="badge bg-purple-600 text-white badge-sm absolute -mt-10 -mr-6 py-3 text-sm">
+                {wishlistArray.length}
+              </div>
               <FaRegHeart />
             </NavLink>
           </div>

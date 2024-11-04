@@ -10,14 +10,15 @@ import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
 const Product = () => {
-  const useProducts = useContext(ProductContext);
+  const { products, handelWishlist, handelAddToCart } =
+    useContext(ProductContext);
 
   const { productId } = useParams();
 
-  if (!useProducts || useProducts.length === 0) {
+  if (!products || products.length === 0) {
     return;
   }
-  const findProduct = useProducts.find((item) => item.slug === productId);
+  const findProduct = products.find((item) => item.slug === productId);
 
   const {
     product_title,
@@ -29,7 +30,6 @@ const Product = () => {
     availability,
     rating,
   } = findProduct;
-  console.log(findProduct);
 
   useEffect(() => {
     document.title = `${product_title} | GadgetHeaven`;
@@ -78,7 +78,7 @@ const Product = () => {
               {Specification.map((item, idx) => (
                 <>
                   <li key={idx}>
-                    {idx}. {item}
+                    {idx + 1}. {item}
                   </li>
                 </>
               ))}
@@ -98,10 +98,16 @@ const Product = () => {
             </div>
           </div>
           <div className="flex gap-2">
-            <button className="btn rounded-full bg-purple-600 text-white">
+            <button
+              onClick={() => handelAddToCart(findProduct)}
+              className="btn rounded-full bg-purple-600 text-white"
+            >
               Add to Cart <IoCartOutline className="text-xl" />
             </button>
-            <button className="btn rounded-full text-lg bg-transparent border">
+            <button
+              onClick={() => handelWishlist(findProduct)}
+              className="btn rounded-full text-lg bg-transparent border"
+            >
               <FaRegHeart />
             </button>
           </div>

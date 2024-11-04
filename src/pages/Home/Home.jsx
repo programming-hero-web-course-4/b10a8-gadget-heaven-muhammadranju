@@ -7,27 +7,28 @@ import Navbar from "../../layout/Header/Navbar";
 
 const Home = () => {
   const [catProducts, setCatProducts] = useState([]);
+
   const [isActiveColor, setIsActiveColor] = useState(true);
   const categories = useLoaderData();
-  const useProducts = useContext(ProductContext);
+  const { products } = useContext(ProductContext);
   const { categoryId } = useParams();
 
   const handelIsActive = () => {
     setIsActiveColor(!isActiveColor);
   };
+
   useEffect(() => {
     if (categoryId === "all-products" || !categoryId) {
-      setCatProducts(useProducts);
+      setCatProducts(products);
     } else {
-      const findProducts = useProducts.filter((category) => {
+      const findProducts = products.filter((category) => {
         return category.category === categoryId;
       });
       setCatProducts(findProducts);
     }
-  }, [categoryId, useProducts]);
-  useEffect(() => {
     document.title = "GadgetHeaven E-Commerce a gadget-buying website";
-  }, []);
+  }, [categoryId, products]);
+
   return (
     <>
       <Navbar />
@@ -38,6 +39,7 @@ const Home = () => {
 
         {/* main category and cards section */}
         <div className="flex lg:flex-row flex-col gap-5 mt-10 ">
+          {/* Category btn */}
           <div className="w-[20%] bg-white border rounded-2xl h-full  flex flex-col gap-5 p-5">
             <NavLink
               onClick={handelIsActive}

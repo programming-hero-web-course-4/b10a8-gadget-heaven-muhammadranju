@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Carts from "../../components/Carts/Carts";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
 import { HiAdjustmentsVertical } from "react-icons/hi2";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
+import { ProductContext } from "../../layout/Root/MainRoot";
 
 const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
+  const [sortPrice, setSortPrice] = useState([]);
+  const { cartArray, wishlistArray, handelAddToCart } =
+    useContext(ProductContext);
 
   const handelCartBtn = () => {
     setIsCart(true);
@@ -14,6 +18,14 @@ const Dashboard = () => {
   const handelWishlistBtn = () => {
     setIsCart(false);
   };
+
+  const handelSortByPrice = () => {
+    const sortByPriceArray = cartArray.sort((a, b) => b.price - a.price);
+
+    setSortPrice(sortByPriceArray);
+  };
+  // console.log(sortPrice);
+
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven ";
   }, []);
@@ -51,8 +63,11 @@ const Dashboard = () => {
         <h3 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h3>
         {isCart && (
           <div className="space-x-3">
-            <span className="font-bold text-xl">Total cost:999.99</span>
-            <button className="btn rounded-full border-purple-500 text-purple-500 px-10">
+            <span className="font-bold text-xl">Total cost:$ 999.99</span>
+            <button
+              onClick={handelSortByPrice}
+              className="btn rounded-full border-purple-500 text-purple-500 px-10"
+            >
               Sort by Price <HiAdjustmentsVertical className="text-2xl" />
             </button>
             <button className="btn border rounded-full bg-purple-600 text-white px-14">
@@ -62,7 +77,15 @@ const Dashboard = () => {
         )}
       </div>
       {/* card */}
-      {isCart ? <Carts /> : <WishlistCompo />}
+      {isCart
+        ? cartArray.map((cart) => <Carts cart={cart} key={cart.product_id} />)
+        : wishlistArray.map((wishlist) => (
+            <WishlistCompo
+              key={wishlist.product_id}
+              wishlist={wishlist}
+              handelAddToCart={handelAddToCart}
+            />
+          ))}
     </div>
   );
 };

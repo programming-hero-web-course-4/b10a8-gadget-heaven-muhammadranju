@@ -1,9 +1,11 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
 import Heading from "../../components/Heading/Heading";
 import Header from "../../layout/Header/Header";
+import { ProductContext } from "../../layout/Root/MainRoot";
 
 const Wishlist = () => {
+  const { wishlistArray } = useContext(ProductContext);
   useEffect(() => {
     document.title = "Wishlist | GadgetHeaven ";
   }, []);
@@ -23,7 +25,9 @@ const Wishlist = () => {
       <div className="flex justify-between items-center mt-10 ">
         <h3 className="font-bold text-2xl">Your Wishlists Here</h3>
       </div>
-      <WishlistCompo />
+      {wishlistArray.map((wishlist) => (
+        <WishlistCompo key={wishlist.product_id} wishlist={wishlist} />
+      ))}
     </div>
   );
 };
