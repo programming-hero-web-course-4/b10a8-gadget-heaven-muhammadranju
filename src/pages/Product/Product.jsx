@@ -62,6 +62,7 @@ const Product = () => {
           <span className="font-semibold text-lg">Price: ${price}.00</span>
           <div>
             <span
+              disabled={true}
               className={`rounded-full text-sm  p-1 px-4 ${
                 availability
                   ? "bg-green-100 text-green-600 border border-green-500"

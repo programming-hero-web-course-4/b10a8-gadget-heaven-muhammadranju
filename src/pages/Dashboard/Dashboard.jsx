@@ -34,19 +34,16 @@ const Dashboard = () => {
     const sortByPriceArray = cartArray.sort((a, b) => b.price - a.price);
 
     setSortPrice(sortByPriceArray);
-    // setCartArray(sortByPriceArray);
-    sortPrice;
   };
-  // console.log(sortPrice);
 
   const totalPrice = cartArray.reduce((accumulator, product) => {
     return parseInt(accumulator + product.price);
   }, 0);
 
   const handelPurchaseBtn = () => {
-    console.log("object");
+    sortPrice;
     setCartArray([]);
-    toast.info("Successfully Purchase your items ", msgInfo);
+    toast.success("Successfully Purchase your items ", msgInfo);
     document.getElementById("purchaseModel").showModal();
 
     setTotalPurchasePrice((prev) => prev + totalPrice);
@@ -54,7 +51,7 @@ const Dashboard = () => {
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven ";
   }, []);
-
+  console.log(totalPrice);
   return (
     <div>
       <Header />
@@ -94,13 +91,17 @@ const Dashboard = () => {
             </span>
             <button
               onClick={handelSortByPrice}
-              className="btn rounded-full border-purple-500 text-purple-500 px-10"
+              disabled={totalPrice === 0 ? true : false}
+              className={`btn rounded-full disabled border-purple-500 text-purple-500 px-10 `}
             >
               Sort by Price <HiAdjustmentsVertical className="text-2xl" />
             </button>
             <button
               onClick={handelPurchaseBtn}
-              className="btn border rounded-full bg-purple-600 text-white px-14"
+              disabled={totalPrice === 0 ? true : false}
+              className={`btn border rounded-full bg-purple-600 text-white px-14 ${
+                totalPrice === 0 ? "disabled" : ""
+              }`}
             >
               Purchase
             </button>

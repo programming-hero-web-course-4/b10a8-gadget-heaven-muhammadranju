@@ -13,13 +13,13 @@ const Home = () => {
   const { products } = useContext(ProductContext);
   const { categoryId } = useParams();
 
-  const handelIsActive = () => {
-    setIsActiveColor(!isActiveColor);
+  const handelIsActive = (ind) => {
+    setIsActiveColor(ind);
   };
 
   useEffect(() => {
     if (categoryId === "all-products" || !categoryId) {
-      setCatProducts(products);
+      setCatProducts(products.slice(0, 12));
     } else {
       const findProducts = products.filter((category) => {
         return category.category === categoryId;
@@ -45,8 +45,9 @@ const Home = () => {
               onClick={handelIsActive}
               to="/category/all-products"
               className={({ isActive }) =>
-                `btn   text-white"} ${
-                  isActive ? "bg-purple-600 text-white" : ""
+                `btn rounded-full  text-white"} ${
+                  (isActive ? isActiveColor : "",
+                  isActiveColor ? "bg-purple-600 text-white" : "")
                 }`
               }
             >
@@ -57,7 +58,7 @@ const Home = () => {
               <Categories
                 key={idx}
                 category={category}
-                handelIsActive={handelIsActive}
+                handelIsActive={() => handelIsActive(false)}
               />
             ))}
           </div>
