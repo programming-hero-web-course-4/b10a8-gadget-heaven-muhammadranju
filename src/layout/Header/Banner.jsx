@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Banner = () => {
   return (
     <>
@@ -9,9 +11,12 @@ const Banner = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <button className="btn bg-white text-[#9538E2] px-6 font-bold rounded-full">
+        <NavLink
+          to={"/dashboard"}
+          className="btn bg-white text-purple-600 px-6 font-bold rounded-full"
+        >
           Show Now
-        </button>
+        </NavLink>
       </div>
       {/* herder banner */}
       <div className="w-[60%] h- mx-auto rounded-2xl p-5 border-2 border-slate-50 bg-white/25 absolute left-0 right-0 mt-8">

@@ -6,7 +6,7 @@ const menuItems = [
   { name: "Home", url: "/" },
   { name: "Statistics", url: "/statistics" },
   { name: "Dashboard", url: "/dashboard" },
-  { name: "Dashboard", url: "/dashboard" },
+  // { name: "Wishlist", url: "/wishlist" },
 ];
 
 const Header = () => {
@@ -67,12 +67,19 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4 ">
-        <a className="btn bg-white border rounded-full text-lg">
+        <NavLink
+          to={"/cart"}
+          className="btn bg-white border rounded-full text-lg"
+        >
           <IoCartOutline />
-        </a>
-        <a className="btn rounded-full bg-white border text-lg">
+        </NavLink>
+
+        <NavLink
+          to={"/wishlist"}
+          className="btn rounded-full bg-white border text-lg"
+        >
           <FaRegHeart />
-        </a>
+        </NavLink>
       </div>
     </div>
   );

@@ -4,6 +4,11 @@ import MainRoot from "../layout/Root/MainRoot";
 import Home from "../pages/Home/Home";
 import Category from "../layout/Categories/Category";
 import Product from "../pages/Product/Product";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Wishlist from "../pages/Wishlist/Wishlist";
+import Statistics from "../pages/Statistics/Statistics";
+import Cart from "../components/Carts/Carts";
+import CartPage from "../pages/Cart/CartPage";
 
 const MainRouter = createBrowserRouter([
   {
@@ -24,11 +29,11 @@ const MainRouter = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <div>Statistics</div>,
+        element: <Statistics />,
       },
       {
         path: "/dashboard",
-        element: <div>Dashboard</div>,
+        element: <Dashboard />,
       },
       {
         path: "/products",
@@ -41,11 +46,11 @@ const MainRouter = createBrowserRouter([
 
       {
         path: "/cart",
-        element: <div>Cart</div>,
+        element: <CartPage />,
       },
       {
         path: "/wishlist",
-        element: <div>Wishlist</div>,
+        element: <Wishlist />,
       },
     ],
   },

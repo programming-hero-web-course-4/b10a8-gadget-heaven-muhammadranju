@@ -19,7 +19,7 @@ const Card = ({ card }) => {
         <div className="card-actions">
           <Link
             to={`/product/${card?.slug}`}
-            className="btn btn-outline text-[#9538E2] border-[#9538E2] rounded-full px-6 font-bold"
+            className="btn btn-outline text-purple-600 border-purple-600 rounded-full px-6 font-bold"
           >
             View Details
           </Link>

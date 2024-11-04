@@ -43,7 +43,7 @@ const Home = () => {
               to="/category/all-products"
               className={({ isActive }) =>
                 `btn   text-white"} ${
-                  isActive ? "bg-[#9538E2] text-white" : ""
+                  isActive ? "bg-purple-600 text-white" : ""
                 }`
               }
             >

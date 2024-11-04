@@ -8,7 +8,7 @@ const Categories = ({ category, handelIsActive }) => {
         onClick={handelIsActive}
         to={`/category/${category.category_name}`}
         className={({ isActive }) =>
-          `btn  ${isActive ? "bg-[#9538E2] text-white" : ""}`
+          `btn  ${isActive ? "bg-purple-600 text-white" : ""}`
         }
       >
         {category.category_name}

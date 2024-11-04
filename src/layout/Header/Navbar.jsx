@@ -8,13 +8,13 @@ const menuItems = [
   { name: "Home", url: "/" },
   { name: "Statistics", url: "/statistics" },
   { name: "Dashboard", url: "/dashboard" },
-  { name: "Dashboard", url: "/dashboard" },
+  //   { name: "Wishlist", url: "/wishlist" },
 ];
 
 const Navbar = () => {
   return (
-    <div className="border border-[#9538E2] rounded-2xl  p-1">
-      <div className="bg-[#9538E2] rounded-2xl pt-5 pb-72 relative">
+    <div className="border border-purple-600 rounded-2xl  p-1">
+      <div className="bg-purple-600 rounded-2xl pt-5 pb-72 relative">
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -78,12 +78,18 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end space-x-4 ">
-            <a className="btn bg-white border rounded-full text-lg">
+            <NavLink
+              to={"/cart"}
+              className="btn bg-white border rounded-full text-lg"
+            >
               <IoCartOutline />
-            </a>
-            <a className="btn rounded-full bg-white border text-lg">
+            </NavLink>
+            <NavLink
+              to={"/wishlist"}
+              className="btn rounded-full bg-white border text-lg"
+            >
               <FaRegHeart />
-            </a>
+            </NavLink>
           </div>
         </div>
         {/* hero section */}

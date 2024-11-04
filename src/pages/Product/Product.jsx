@@ -28,7 +28,7 @@ const Product = () => {
   return (
     <div className="relative h-screen">
       <Header />
-      <div className="bg-[#9538E2] text-white py-5  h-96 ">
+      <div className="bg-purple-600 text-white py-5 rounded-xl h-96 ">
         <Heading
           title={"Product Details"}
           p={
@@ -89,7 +89,7 @@ const Product = () => {
             </div>
           </div>
           <div className="flex gap-2">
-            <button className="btn rounded-full bg-[#9538E2] text-white">
+            <button className="btn rounded-full bg-purple-600 text-white">
               Add to Cart <IoCartOutline className="text-xl" />
             </button>
             <button className="btn rounded-full text-lg bg-transparent border">
