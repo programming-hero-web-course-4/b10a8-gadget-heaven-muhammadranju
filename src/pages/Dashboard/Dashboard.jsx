@@ -6,6 +6,7 @@ import { HiAdjustmentsVertical } from "react-icons/hi2";
 import WishlistCompo from "../../components/Carts/WishlistCompo";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const msgInfo = {
   position: "top-center",
@@ -20,8 +21,15 @@ const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
   const [sortPrice, setSortPrice] = useState([]);
   const [totalPurchasePrice, setTotalPurchasePrice] = useState(0);
-  const { cartArray, wishlistArray, handelAddToCart, setCartArray } =
-    useContext(ProductContext);
+  const {
+    cartArray,
+    wishlistArray,
+    handelAddToCart,
+    setCartArray,
+    setHistoryArray,
+  } = useContext(ProductContext);
+
+  const navigate = useNavigate();
 
   const handelCartBtn = () => {
     setIsCart(true);
@@ -45,13 +53,16 @@ const Dashboard = () => {
     setCartArray([]);
     toast.success("Successfully Purchase your items ", msgInfo);
     document.getElementById("purchaseModel").showModal();
+    setHistoryArray((prev) => [...prev, ...cartArray]);
 
     setTotalPurchasePrice((prev) => prev + totalPrice);
   };
+
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven ";
   }, []);
   console.log(totalPrice);
+
   return (
     <div>
       <Header />
@@ -139,7 +150,10 @@ const Dashboard = () => {
             Total cost: ${totalPurchasePrice}.00
           </span>
           <form method="dialog" className="mt-5">
-            <button className="btn  rounded-full font-bold w-full">
+            <button
+              onClick={() => navigate("/")}
+              className="btn  rounded-full font-bold w-full"
+            >
               Close
             </button>
           </form>

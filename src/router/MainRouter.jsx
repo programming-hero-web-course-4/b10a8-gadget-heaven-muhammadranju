@@ -8,6 +8,7 @@ import Wishlist from "../pages/Wishlist/Wishlist";
 import Statistics from "../pages/Statistics/Statistics";
 import CartPage from "../pages/Cart/CartPage";
 import ErrorPage from "../layout/Error/ErrorPage";
+import History from "../pages/History/History";
 
 const MainRouter = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const MainRouter = createBrowserRouter([
       {
         path: "/wishlist",
         element: <Wishlist />,
+      },
+      {
+        path: "/history",
+        element: <History />,
       },
     ],
   },

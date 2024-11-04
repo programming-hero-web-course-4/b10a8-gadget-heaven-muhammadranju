@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import Header from "../../layout/Header/Header";
@@ -12,6 +12,7 @@ import { FaRegHeart } from "react-icons/fa";
 const Product = () => {
   const { products, handelWishlist, handelAddToCart } =
     useContext(ProductContext);
+  const [isAdded, setIsAdded] = useState(false);
 
   const { productId } = useParams();
 
@@ -30,6 +31,12 @@ const Product = () => {
     availability,
     rating,
   } = findProduct;
+
+  const handelWishlistBtn = (findProduct) => {
+    handelWishlist(findProduct);
+    setIsAdded(true);
+    console.log("add");
+  };
 
   useEffect(() => {
     document.title = `${product_title} | GadgetHeaven`;
@@ -106,7 +113,8 @@ const Product = () => {
               Add to Cart <IoCartOutline className="text-xl" />
             </button>
             <button
-              onClick={() => handelWishlist(findProduct)}
+              onClick={() => handelWishlistBtn(findProduct)}
+              disabled={isAdded ? true : false}
               className="btn rounded-full text-lg bg-transparent border"
             >
               <FaRegHeart />

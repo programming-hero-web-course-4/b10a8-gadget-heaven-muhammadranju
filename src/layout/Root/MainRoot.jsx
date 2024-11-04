@@ -16,6 +16,7 @@ const MainRoot = () => {
 
   const [cartArray, setCartArray] = useState([]);
   const [wishlistArray, setWishlistArray] = useState([]);
+  const [historyArray, setHistoryArray] = useState([]);
 
   const handelAddToCart = (cartItem) => {
     setCartArray((prev) => [...prev, cartItem]);
@@ -55,6 +56,8 @@ const MainRoot = () => {
             cartArray,
             wishlistArray,
             setCartArray,
+            historyArray,
+            setHistoryArray,
           }}
         >
           <div className="min-h-[calc(100vh-288px)]">

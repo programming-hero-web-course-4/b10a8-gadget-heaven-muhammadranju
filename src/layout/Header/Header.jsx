@@ -8,7 +8,7 @@ const menuItems = [
   { name: "Home", url: "/" },
   { name: "Statistics", url: "/statistics" },
   { name: "Dashboard", url: "/dashboard" },
-  // { name: "Wishlist", url: "/wishlist" },
+  { name: "History", url: "/history" },
 ];
 
 const Header = () => {
