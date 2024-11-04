@@ -26,17 +26,5 @@
   {
     "category_id": 7,
     "category_name": "Kitchen Appliances"
-  },
-  {
-    "category_id": 8,
-    "category_name": "Fitness"
-  },
-  {
-    "category_id": 9,
-    "category_name": "Health"
-  },
-  {
-    "category_id": 10,
-    "category_name": "Home Automation"
   }
 ]

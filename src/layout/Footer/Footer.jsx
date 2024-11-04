@@ -1,6 +1,13 @@
+import Heading from "../../components/Heading/Heading";
+
 const Footer = () => {
   return (
-    <footer className=" bg-white  p-10">
+    <footer className=" bg-gray-100  p-10 pt-28 mt-20">
+      <Heading
+        title={"Gadget Heaven"}
+        p={"Leading the way in cutting-edge technology and innovation."}
+      />
+      <div className="divider container mx-auto mb-5"></div>
       <div className="footer container mx-auto text-slate-800 font-medium justify-around  items-center">
         <nav>
           <h6 className="footer-title text-xl">Services</h6>

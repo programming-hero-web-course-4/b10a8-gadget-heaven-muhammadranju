@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
-
 import { FaRegHeart } from "react-icons/fa";
+
 import Banner from "./Banner";
 
 const menuItems = [

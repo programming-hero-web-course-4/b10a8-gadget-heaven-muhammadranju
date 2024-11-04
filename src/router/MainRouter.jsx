@@ -1,7 +1,9 @@
+/* eslint-disable no-dupe-keys */
 import { createBrowserRouter } from "react-router-dom";
 import MainRoot from "../layout/Root/MainRoot";
 import Home from "../pages/Home/Home";
 import Category from "../layout/Categories/Category";
+import Product from "../pages/Product/Product";
 
 const MainRouter = createBrowserRouter([
   {
@@ -34,7 +36,7 @@ const MainRouter = createBrowserRouter([
       },
       {
         path: "/product/:productId",
-        element: <div>Product ID</div>,
+        element: <Product />,
       },
 
       {
@@ -45,10 +47,6 @@ const MainRouter = createBrowserRouter([
         path: "/wishlist",
         element: <div>Wishlist</div>,
       },
-      // {
-      //   path: "/category/:categoryId",
-      //   element: <Category />,
-      // },
     ],
   },
 ]);
