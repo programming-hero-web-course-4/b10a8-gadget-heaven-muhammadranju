@@ -4,28 +4,32 @@ import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import Card from "../../components/Card/Card";
 import Navbar from "../../layout/Header/Navbar";
-
+import { useLocation } from "react-router-dom";
 const Home = () => {
   const [catProducts, setCatProducts] = useState([]);
+  const location = useLocation();
 
-  const [isActiveColor, setIsActiveColor] = useState(true);
   const categories = useLoaderData();
   const { products } = useContext(ProductContext);
   const { categoryId } = useParams();
-
-  const handelIsActive = (ind) => {
-    setIsActiveColor(ind);
-  };
+  const isActive =
+    location.pathname === "/" || location.pathname === "/category/all-products";
 
   useEffect(() => {
-    if (categoryId === "all-products" || !categoryId) {
-      setCatProducts(products.slice(0, 12));
+    if (categoryId === "all-products") {
+      setCatProducts(products);
     } else {
       const findProducts = products.filter((category) => {
         return category.category === categoryId;
       });
       setCatProducts(findProducts);
+      if (findProducts.length > 0) {
+        setCatProducts(findProducts);
+      } else {
+        setCatProducts(products.slice(0, 9));
+      }
     }
+
     document.title = "GadgetHeaven E-Commerce a gadget-buying website";
   }, [categoryId, products]);
 
@@ -42,24 +46,16 @@ const Home = () => {
           {/* Category btn */}
           <div className="lg:w-[20%] bg-white border rounded-2xl h-full  flex flex-col gap-5 p-5">
             <NavLink
-              onClick={handelIsActive}
               to="/category/all-products"
-              className={({ isActive }) =>
-                `btn rounded-full  text-white"} ${
-                  (isActive ? isActiveColor : "",
-                  isActiveColor ? "bg-purple-600 text-white" : "")
-                }`
-              }
+              className={`btn rounded-full  text-white"} ${
+                isActive ? "bg-purple-600 text-white" : ""
+              }`}
             >
               All Products
             </NavLink>
 
             {categories.map((category, idx) => (
-              <Categories
-                key={idx}
-                category={category}
-                handelIsActive={() => handelIsActive(false)}
-              />
+              <Categories key={idx} category={category} />
             ))}
           </div>
 
