@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 import ReactStars from "react-rating-stars-component";
-const img =
-  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp";
+
 const Card = ({ card }) => {
   return (
     <div className="card bg-base-100 shadow-xl h-full">
       <figure className="px-6 pt-6">
         <img
-          src={card?.product_image || img}
+          src={card?.product_image}
           alt="Shoes"
           className="rounded-xl w-full lg:h-72 object-cover"
         />

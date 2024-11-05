@@ -60,17 +60,9 @@ const Home = () => {
           </div>
 
           <div className="lg:w-[80%] grid lg:grid-cols-3 grid-cols-1 gap-4 h-full">
-            {catProducts.length !== 0 ? (
-              <>
-                {catProducts.map((card) => (
-                  <Card key={card.product_id} card={card} />
-                ))}
-              </>
-            ) : (
-              <h1 className="font-bold text-4xl text-purple-600">
-                Not Data Found
-              </h1>
-            )}
+            {catProducts.map((card) => (
+              <Card key={card.product_id} card={card} />
+            ))}
           </div>
         </div>
       </div>
