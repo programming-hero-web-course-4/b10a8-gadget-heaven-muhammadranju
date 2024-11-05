@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
+import ReactStars from "react-rating-stars-component";
 const img =
   "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp";
 const Card = ({ card }) => {
@@ -16,6 +17,15 @@ const Card = ({ card }) => {
       <div className="card-body ">
         <h2 className="card-title">{card?.product_title}</h2>
         <p className="font-semibold text-lg">Price: ${card?.price}</p>
+        <div className="flex items-center gap-1">
+          <ReactStars
+            count={5}
+            size={30}
+            value={card?.rating}
+            activeColor="#ffd700"
+          />
+          <span>{card?.rating}</span>
+        </div>
         <div className="card-actions">
           <Link
             to={`/product/${card?.slug}`}

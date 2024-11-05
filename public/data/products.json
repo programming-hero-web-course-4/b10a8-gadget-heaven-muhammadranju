@@ -67,7 +67,7 @@
     "product_title": "Smart Watch",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/kgpywnwgh56nwat40xpg.jpg",
     "category": "Wearables",
-    "price": 199,
+    "price": 399,
     "description": "Water-resistant smartwatch with heart-rate monitoring and GPS.",
     "Specification": [
       "Heart rate monitoring",
@@ -84,7 +84,7 @@
     "product_title": "Portable Charger 10000mAh",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
     "category": "Accessories",
-    "price": 89,
+    "price": 809,
     "description": "Compact 10000mAh portable charger for fast, on-the-go charging.",
     "Specification": [
       "10000mAh capacity",
@@ -135,7 +135,7 @@
     "product_title": "Instant Pot Multi-Cooker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/rcr0h7nuatalq51nk7w0.webp",
     "category": "Kitchen Appliances",
-    "price": 89,
+    "price": 800,
     "description": "7-in-1 multi-cooker with various cooking functions.",
     "Specification": [
       "7 cooking functions",
@@ -152,7 +152,7 @@
     "product_title": "Yoga Mat",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
     "category": "Accessories",
-    "price": 94,
+    "price": 663,
     "description": "Durable and non-slip yoga mat for all levels of practice.",
     "Specification": [
       "Non-slip",
@@ -169,7 +169,7 @@
     "product_title": "Electric Kettle",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/u1qcktpv9pldcrk8xwdm.jpg",
     "category": "Kitchen Appliances",
-    "price": 79,
+    "price": 752,
     "description": "1.7L electric kettle with rapid-boil technology.",
     "Specification": [
       "1.7-liter capacity",
@@ -203,7 +203,7 @@
     "product_title": "Electric Toothbrush",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/iq99rqfboornzbp5ydrw.jpg",
     "category": "Wearables",
-    "price": 83,
+    "price": 230,
     "description": "Rechargeable electric toothbrush with multiple brushing modes.",
     "Specification": [
       "Rechargeable",
@@ -220,7 +220,7 @@
     "product_title": "Laptop Backpack",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/zxh21xrmlfflt5sfm799.jpg",
     "category": "Accessories",
-    "price": 95,
+    "price": 152,
     "description": "Water-resistant laptop backpack with multiple compartments.",
     "Specification": [
       "Fits up to 15-inch laptops",
@@ -237,7 +237,7 @@
     "product_title": "Cordless Vacuum Cleaner",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/hczjvzkcozq2ggkojkgw.jpg",
     "category": "Home Appliances",
-    "price": 99,
+    "price": 360,
     "description": "Lightweight cordless vacuum cleaner for easy cleaning.",
     "Specification": [
       "Cordless",
@@ -271,7 +271,7 @@
     "product_title": "Bluetooth Speaker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/f9geehmziei1iljcrodb.avif",
     "category": "Audio",
-    "price": 87,
+    "price": 172,
     "description": "Portable Bluetooth speaker with powerful bass and 10-hour battery life.",
     "Specification": [
       "Bluetooth 5.0",
@@ -305,7 +305,7 @@
     "product_title": "Fitness Tracker",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/vk7alkmg3maunchgfg3m.png",
     "category": "Wearables",
-    "price": 94,
+    "price": 136,
     "description": "Activity tracker with heart rate monitoring and step counter.",
     "Specification": [
       "Heart rate monitor",
@@ -339,7 +339,7 @@
     "product_title": "Noise-Cancelling Earbuds",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S8cc6c95749194087b4c10958a695027e0.jpg_720x720q80.jpg_.webp",
     "category": "Electronics",
-    "price": 79,
+    "price": 261,
     "description": "Compact noise-cancelling earbuds with high-fidelity sound and long battery life.",
     "Specification": [
       "Bluetooth 5.1",
@@ -357,7 +357,7 @@
     "product_title": "Wireless Gaming Mouse",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/6ab04ddc347e770098c9ec0a081d244e.jpg_720x720q80.jpg_.webp",
     "category": "Computers",
-    "price": 69,
+    "price": 752,
     "description": "Ergonomic wireless gaming mouse with customizable DPI settings.",
     "Specification": [
       "Wireless 2.4 GHz",
@@ -374,7 +374,7 @@
     "product_title": "Mechanical Keyboard",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/d2af0f25f903c3901b9f3f25cc92c0fa.jpg_720x720q80.jpg",
     "category": "Computers",
-    "price": 89,
+    "price": 390,
     "description": "RGB backlit mechanical keyboard designed for gaming and typing.",
     "Specification": [
       "Mechanical keys",
@@ -408,7 +408,7 @@
     "product_title": "Gaming Headset",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/35277bf8d3eb108b063228660438c178.png_720x720q80.png",
     "category": "Computers",
-    "price": 85,
+    "price": 280,
     "description": "Over-ear gaming headset with immersive sound and noise-cancelling mic.",
     "Specification": [
       "50mm drivers",
@@ -425,7 +425,7 @@
     "product_title": "USB-C Hub",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S36a707d245fc4b45a28e1b5a300d7c399.jpg_720x720q80.jpg",
     "category": "Computers",
-    "price": 94,
+    "price": 156,
     "description": "Compact USB-C hub with multiple ports for versatile connectivity.",
     "Specification": [
       "HDMI output",
@@ -460,7 +460,7 @@
     "product_title": "Wireless Charger",
     "product_image": "https://img.drz.lazcdn.com/static/bd/p/f517f5c7a1aa5017402c29d2ebe0fde5.jpg_720x720q80.jpg",
     "category": "Electronics",
-    "price": 84,
+    "price": 171,
     "description": "Fast wireless charger compatible with most smartphones.",
     "Specification": [
       "Qi-compatible",
@@ -478,7 +478,7 @@
     "product_title": "Smartphone Car Mount",
     "product_image": "https://img.drz.lazcdn.com/g/kf/S5206c856d1184ba1bc800218211ae7fau.png_720x720q80.png",
     "category": "Mobiles",
-    "price": 68,
+    "price": 113,
     "description": "Secure car mount for smartphones, compatible with most models.",
     "Specification": [
       "360-degree rotation",
@@ -530,7 +530,7 @@
     "product_title": "Budget Smartphone",
     "product_image": "https://img.drz.lazcdn.com/g/kf/Sf1a73601520942d6a92dfb7db1fe28e8l.jpg_720x720q80.jpg",
     "category": "Mobiles",
-    "price": 14,
+    "price": 140,
     "description": "Affordable smartphone with essential features for everyday use.",
     "Specification": [
       "6.1-inch display",
