@@ -37,3 +37,4 @@ GadgetHeaven is a gadget-buying website that allows users to browse and purchase
 ![Screenshot 1](./public/assets/Screenshot-1.jpeg)
 ![Screenshot 1](./public/assets/Screenshot.jpeg)
 ![Screenshot 1](./public/assets/Screenshot-2.jpeg)
+![Screenshot 1](./public/assets/Screenshot-3.jpeg)
