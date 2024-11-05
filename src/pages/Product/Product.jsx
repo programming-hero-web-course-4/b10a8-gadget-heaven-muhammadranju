@@ -35,7 +35,6 @@ const Product = () => {
   const handelWishlistBtn = (findProduct) => {
     handelWishlist(findProduct);
     setIsAdded(true);
-    console.log("add");
   };
 
   useEffect(() => {
@@ -114,7 +113,7 @@ const Product = () => {
             </button>
             <button
               onClick={() => handelWishlistBtn(findProduct)}
-              disabled={isAdded ? true : false}
+              disabled={isAdded}
               className="btn rounded-full text-lg bg-transparent border"
             >
               <FaRegHeart />
