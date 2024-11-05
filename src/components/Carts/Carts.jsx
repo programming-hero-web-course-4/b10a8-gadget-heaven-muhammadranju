@@ -25,9 +25,9 @@ const Cart = ({ cart, isRemove = false }) => {
     toast.info("Successfully Remove Item ", msgInfo);
   };
   return (
-    <div className="flex justify-between gap-5 bg-gray-100 p-5 mt-10 rounded-xl">
-      <div className="flex gap-5">
-        <div className="w-52 h-52 ">
+    <div className="flex lg:flex-row flex-col justify-between gap-5 bg-gray-100 p-5 mt-10 rounded-xl">
+      <div className="flex lg:flex-row flex-col gap-5">
+        <div className="lg:w-52 lg:h-52 ">
           <img
             src={cart?.product_image}
             className="bg-gray-400 rounded-xl w-full h-full object-cover"
@@ -47,7 +47,7 @@ const Cart = ({ cart, isRemove = false }) => {
         onClick={() => handelCartRemove(cart.product_id)}
         className={`cursor-pointer ${isRemove ? "hidden" : ""}`}
       >
-        <FaDeleteLeft className="text-3xl text-red-500 mx-10  " />
+        <FaDeleteLeft className="text-3xl text-red-500 mx-10  lg:float-start float-right" />
       </button>
     </div>
   );

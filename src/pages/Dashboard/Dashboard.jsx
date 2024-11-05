@@ -66,14 +66,14 @@ const Dashboard = () => {
   return (
     <div>
       <Header />
-      <div className="bg-purple-600  text-white py-5 rounded-xl h-64">
+      <div className="bg-purple-600  text-white py-5 rounded-xl lg:h-64 ">
         <Heading
           title={"Dashboard"}
           p={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            "A dashboard displays key data visually, helping users monitor, analyze, and make quick, informed decisions efficiently."
           }
         />
-        <div className="flex justify-center items-center gap-2 font-bold ">
+        <div className="flex lg:flr justify-center items-center gap-2 font-bold  ">
           <button
             onClick={handelCartBtn}
             className={`btn rounded-full px-14 ${
@@ -92,30 +92,36 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-10 ">
-        <h3 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h3>
+      <div className="flex lg:justify-between items-center mt-10 ">
+        <h3 className="font-bold text-2xl hidden lg:block">
+          {isCart ? "Cart" : "Wishlist"}
+        </h3>
         {isCart && (
-          <div className="space-x-3">
-            <span className="font-bold text-xl">
-              Total cost: ${totalPrice}
-              {totalPrice !== 0 && ".00"}
-            </span>
-            <button
-              onClick={handelSortByPrice}
-              disabled={totalPrice === 0 ? true : false}
-              className={`btn rounded-full disabled border-purple-500 text-purple-500 px-10 `}
-            >
-              Sort by Price <HiAdjustmentsVertical className="text-2xl" />
-            </button>
-            <button
-              onClick={handelPurchaseBtn}
-              disabled={totalPrice === 0 ? true : false}
-              className={`btn border rounded-full  bg-purple-600 text-white px-14 ${
-                totalPrice === 0 ? "disabled" : ""
-              }`}
-            >
-              Purchase
-            </button>
+          <div className="lg:space-x-3 flex lg:flex-row flex-col items-center justify-center">
+            <div className="lg:flex lg:flex-row flex-col justify-center items-center gap-2">
+              <span className="font-bold text-xl">
+                Total cost: ${totalPrice}
+                {totalPrice !== 0 && ".00"}
+              </span>
+              <div className="flex  gap-2">
+                <button
+                  onClick={handelSortByPrice}
+                  disabled={totalPrice === 0 ? true : false}
+                  className={`btn rounded-full disabled border-purple-500 text-purple-500 px-10  `}
+                >
+                  Sort by Price <HiAdjustmentsVertical className="text-2xl" />
+                </button>
+                <button
+                  onClick={handelPurchaseBtn}
+                  disabled={totalPrice === 0 ? true : false}
+                  className={`btn border rounded-full  bg-purple-600 text-white lg:px-14 px-10 ${
+                    totalPrice === 0 ? "disabled" : ""
+                  }`}
+                >
+                  Purchase
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>

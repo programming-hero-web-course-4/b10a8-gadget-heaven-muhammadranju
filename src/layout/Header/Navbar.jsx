@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
             <Link
               to="/"
-              className="btn btn-ghost hover:bg-transparent text-xl text-white"
+              className="btn btn-ghost hover:bg-transparent text-xl text-white -ml-3 lg:ml-0"
             >
               Gadget Heaven
             </Link>

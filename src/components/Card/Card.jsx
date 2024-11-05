@@ -11,7 +11,7 @@ const Card = ({ card }) => {
         <img
           src={card?.product_image || img}
           alt="Shoes"
-          className="rounded-xl w-full h-72 object-cover"
+          className="rounded-xl w-full lg:h-72 object-cover"
         />
       </figure>
       <div className="card-body ">

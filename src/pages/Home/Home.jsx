@@ -40,7 +40,7 @@ const Home = () => {
         {/* main category and cards section */}
         <div className="flex lg:flex-row flex-col gap-5 mt-10 ">
           {/* Category btn */}
-          <div className="w-[20%] bg-white border rounded-2xl h-full  flex flex-col gap-5 p-5">
+          <div className="lg:w-[20%] bg-white border rounded-2xl h-full  flex flex-col gap-5 p-5">
             <NavLink
               onClick={handelIsActive}
               to="/category/all-products"
@@ -63,7 +63,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="w-[80%] grid lg:grid-cols-3 grid-cols-1 gap-4 h-full">
+          <div className="lg:w-[80%] grid lg:grid-cols-3 grid-cols-1 gap-4 h-full">
             {catProducts.length !== 0 ? (
               <>
                 {catProducts.map((card) => (

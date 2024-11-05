@@ -27,7 +27,7 @@ const Statistics = () => {
           <Heading
             title={"Statistics"}
             p={
-              "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+              "Statistics analyze data patterns, offering insights and trends, helping industries make informed, data-driven decisions effectively."
             }
           />
         </div>

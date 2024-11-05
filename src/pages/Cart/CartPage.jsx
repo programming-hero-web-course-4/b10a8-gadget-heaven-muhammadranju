@@ -16,7 +16,7 @@ const CartPage = () => {
         <Heading
           title={"Cart"}
           p={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            "A cart holds selected items for purchase, allowing users to review choices before completing their transaction."
           }
         />
       </div>

@@ -16,7 +16,7 @@ const Wishlist = () => {
         <Heading
           title={"Wishlist"}
           p={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            "A wishlist captures dreams and desires, guiding loved ones to meaningful gifts and helping organize future goals"
           }
         />
       </div>

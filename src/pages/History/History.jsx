@@ -30,18 +30,17 @@ const History = () => {
           <Heading
             title={"History"}
             p={
-              "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+              "History records past events and cultures, preserving lessons, shaping identity, and guiding future decisions for societies worldwide."
             }
           />
         </div>
 
         <div className="flex justify-between items-center mt-10 ">
-          <h3 className="font-bold text-2xl">Your Purchase History:</h3>
+          <h3 className="font-bold lg:text-2xl">Your Purchase History:</h3>
 
-          <div className="space-x-3">
-            <span className="font-bold text-xl">
-              Total cost: $({totalPrice}) Count:({historyArray.length})
-            </span>
+          <div className="space-x-3 font-bold lg:text-xl">
+            <span className="">Total cost: $({totalPrice})</span>
+            <span>Count:({historyArray.length})</span>
           </div>
         </div>
         <div className="h-40">

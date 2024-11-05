@@ -41,9 +41,9 @@ const Product = () => {
     document.title = `${product_title} | GadgetHeaven`;
   }, []);
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen mb-80 lg:mb-0 ">
       <Header />
-      <div className="bg-purple-600 text-white py-5 rounded-xl h-96 ">
+      <div className="bg-purple-600 text-white py-5 rounded-xl lg:h-96 ">
         <Heading
           title={"Product Details"}
           p={
@@ -52,18 +52,18 @@ const Product = () => {
         />
       </div>
       {/* card */}
-      <div className="flex absolute top-0 bg-white right-0 left-0 lg:mx-40  my-60 rounded-xl">
-        <div className=" p-10 ">
+      <div className="flex lg:flex-row flex-col lg:absolute top-0 bg-white right-0 left-0 lg:mx-40  lg:my-60  rounded-xl">
+        <div className="p-10">
           <div className="p-5  rounded-xl border">
             <img
-              className="rounded-2xl w-[600px] h-[600px]   object-cover"
+              className="rounded-2xl lg:w-[600px] lg:h-[600px] object-cover"
               src={product_image}
-              alt=""
+              alt={product_title}
             />
           </div>
         </div>
 
-        <div className="flex flex-col mt-10 space-y-3">
+        <div className="flex flex-col  lg:mt-10 space-y-3">
           <h1 className="text-2xl font-bold">{product_title}</h1>
           <span className="font-semibold text-lg">Price: ${price}.00</span>
           <div>
