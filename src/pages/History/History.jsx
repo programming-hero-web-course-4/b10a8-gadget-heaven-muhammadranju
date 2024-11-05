@@ -40,7 +40,7 @@ const History = () => {
 
           <div className="space-x-3">
             <span className="font-bold text-xl">
-              Total cost: ({totalPrice}) Count:({historyArray.length})
+              Total cost: $({totalPrice}) Count:({historyArray.length})
             </span>
           </div>
         </div>
