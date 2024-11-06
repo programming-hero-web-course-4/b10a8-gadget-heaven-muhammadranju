@@ -15,31 +15,31 @@ const Product = () => {
   const [isAdded, setIsAdded] = useState(false);
 
   const { productId } = useParams();
-
-  if (!products || products.length === 0) {
-    return;
-  }
   const findProduct = products.find((item) => item.slug === productId);
 
   const {
-    product_title,
-    product_image,
+    product_title = "",
+    product_image = "",
+    price = 0,
+    description = "",
+    Specification = [],
+    availability = false,
+    rating = 0,
+  } = findProduct || {};
 
-    price,
-    description,
-    Specification,
-    availability,
-    rating,
-  } = findProduct;
-
-  const handelWishlistBtn = (findProduct) => {
-    handelWishlist(findProduct);
-    setIsAdded(true);
+  const handelWishlistBtn = () => {
+    if (findProduct) {
+      handelWishlist(findProduct);
+      setIsAdded(true);
+    }
   };
 
   useEffect(() => {
-    document.title = `${product_title} | GadgetHeaven`;
-  }, []);
+    if (product_title) {
+      document.title = `${product_title} | GadgetHeaven`;
+    }
+  }, [product_title]);
+
   return (
     <div className="relative h-screen mb-80 lg:mb-0 ">
       <Header />
@@ -100,6 +100,7 @@ const Product = () => {
                 size={30}
                 value={rating}
                 activeColor="#ffd700"
+                edit={false}
               />
               <span>{rating}</span>
             </div>

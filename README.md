@@ -26,6 +26,10 @@ GadgetHeaven is a gadget-buying website that allows users to browse and purchase
 - Fetch API
 - Toastify React
 
+## Requirements:
+
+- https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf
+
 ## Live Demo:
 
 ### https://batch10-assignment-8.netlify.app

@@ -22,6 +22,7 @@ const Card = ({ card }) => {
             size={30}
             value={card?.rating}
             activeColor="#ffd700"
+            edit={false}
           />
           <span>{card?.rating}</span>
         </div>

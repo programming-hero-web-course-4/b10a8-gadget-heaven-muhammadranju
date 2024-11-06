@@ -30,7 +30,7 @@ const Home = () => {
       }
     }
 
-    document.title = "GadgetHeaven E-Commerce a gadget-buying website";
+    document.title = "Home | GadgetHeaven E-Commerce a gadget-buying website";
   }, [categoryId, products]);
 
   return (

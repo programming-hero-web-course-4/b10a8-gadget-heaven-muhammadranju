@@ -58,6 +58,7 @@ const MainRoot = () => {
             setCartArray,
             historyArray,
             setHistoryArray,
+            setWishlistArray,
           }}
         >
           <div className="min-h-[calc(100vh-288px)]">
