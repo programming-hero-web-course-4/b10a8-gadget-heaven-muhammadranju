@@ -7,13 +7,25 @@ GadgetHeaven is a gadget-buying website that allows users to browse and purchase
 ## Features:
 
 - User can see a list of all the gadgets available for purchase
-- User can search for specific gadgets by name or category
 - User can view detailed information about a specific gadget
 - User can add a gadget to their cart
 - User can view their cart and see the total cost of their purchase
 - User can add wishlist to their wishlist
 - User can view their wishlist and see the total cost of their purchase
 - User can checkout and complete the purchase
+
+## React Functional Concepts Used:
+
+- JavaScript Functions
+- React Hooks
+- Context API
+- useEffect Hook
+- useState Hook
+- Event Handlers
+- useContext Hook
+- useLocation Hook
+- useNavigate Hook
+- useParams Hook
 
 ## Technologies Used:
 
